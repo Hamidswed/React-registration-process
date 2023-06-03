@@ -1,0 +1,17 @@
+.container{
+  max-width: 80%;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+}
+
+.aside{
+  flex:1;
+  background-color: aquamarine;
+}
+
+.pages{
+  flex: 2;
+}
