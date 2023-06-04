@@ -46,11 +46,30 @@
   font-size: 1.8rem;
   background-color: var(--color-primary);
   color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 8px;
   float: right;
   margin-top: 10rem;
   cursor: pointer;
 }
 .form button:hover{
   background-color: var(--color-primary-light);
+}
+
+.table{
+  margin: 5rem 0 17rem 0;
+  background-color: var(--color-gray);
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20rem;
+  line-height: 50px;
+}
+.table thead tr{
+  background-color:var(--color-primary-light);
+  color: #ffffff;
+  
+}
+.table tr{
+  background-color: lightgray;
+  text-align: center;
 }

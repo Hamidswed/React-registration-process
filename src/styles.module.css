@@ -13,15 +13,14 @@
   flex:1;
   background-image: url("./assets/images/aside-back.jpg");
   background-size: cover;
-  /* background-position: center; */
 }
 
 .pages{
   flex: 2;
   padding: 5rem;
+  position: relative;
 }
 .btnContainer{
-  margin-top: 19rem;
   display: flex;
   justify-content: space-between;
 }

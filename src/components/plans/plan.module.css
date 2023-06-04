@@ -1,7 +1,37 @@
 .container{
   display: flex;
-  gap: 1rem;
-  
+  gap: 2rem;
+}
+.message{
+  background-color: var(--color-secondary);
+  position: absolute;
+  top:46rem;
+  left:0;
+  padding: .5rem 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-radius: 0 20px 20px 0;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-gray);
+  border-radius: 4rem;
+  margin: 5rem auto 7rem auto;
+}
+.form input[type=radio]{
+  border: 0px;
+  width: 30%;
+  height: 2em;
+  accent-color: var(--color-primary-light)
+}
+.form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 .itemContainer{
   flex: 1;
@@ -11,6 +41,7 @@
   border: 2px solid var(--color-gray);
   border-radius: 1rem;
   cursor: pointer;
+  margin-top: 3rem;
 }
 .itemContainer:hover{
   border: 2px solid var(--color-primary-light);

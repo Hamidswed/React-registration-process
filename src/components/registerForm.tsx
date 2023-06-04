@@ -1,7 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import { UserType } from "../types/userType";
 import * as Yup from "yup";
-import { useState } from "react";
 import { RootState } from "../redux/store";
 import { useSelector, useDispatch } from "react-redux";
 import { userActions } from "../redux/slice/user";
@@ -10,7 +8,6 @@ import Styles from "./styles.module.css";
 
 const RegisterForm = () => {
   const user = useSelector((state: RootState) => state.user);
-  const step1 = useSelector((state: RootState) => state.step1);
   const dispatch = useDispatch();
 
   type initialType = {
@@ -46,8 +43,6 @@ const RegisterForm = () => {
     dispatch(userActions.getPersonalInfo(values));
     navigate("/plan");
   };
-
-  console.log(user, "user information");
 
   return (
     <div className={Styles.form}>

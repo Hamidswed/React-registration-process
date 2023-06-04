@@ -1,9 +1,6 @@
-import { RootState } from "../redux/store";
 import Styles from "./styles.module.css";
-import { useSelector } from 'react-redux';
 
 const Aside = () => {
-  const step1 = useSelector((state:RootState)=>state.step1)
   const steps = [
     {
       id: 1,
@@ -26,7 +23,7 @@ const Aside = () => {
       {steps.map((item) => {
         return (
           <div key={item.id} className={Styles.steps}>
-            <div className={Styles.stepId} style={step1 ?{backgroundColor:"red"} :{backgroundColor:""}}>{item.id}</div>
+            <div className={Styles.stepId}>{item.id}</div>
             <div>
               <p>{item.step.toUpperCase()}</p>
               <h3>{item.title.toUpperCase()}</h3>

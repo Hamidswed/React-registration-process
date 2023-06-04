@@ -41,10 +41,12 @@ const PlanList = () => {
         })}
       </div>
       {user.planInfo.title !== "" ? (
-        <div>{user.planInfo.title} is selected!</div>
+        <p className={Plan.message}>
+          <strong>{user.planInfo.title}</strong> is selected!
+        </p>
       ) : null}
 
-      <form>
+      <form className={Plan.form}>
         <label>
           <input
             type="radio"

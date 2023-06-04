@@ -3,7 +3,6 @@ import { UserType } from "../../types/userType";
 
 type InitialType = {
   user: UserType;
-  step1: boolean;
 };
 
 const initialState: InitialType = {
@@ -15,12 +14,11 @@ const initialState: InitialType = {
       phone: "",
     },
     planInfo: {
-      title: "",
-      price: 0,
+      title: "Silver",
+      price: 8,
       timeFrame: false,
     },
   },
-  step1: false,
 };
 
 const userSlice = createSlice({
@@ -29,12 +27,11 @@ const userSlice = createSlice({
   reducers: {
     getPersonalInfo: (state, action) => {
       state.user.personalInfo = action.payload;
-      state.step1 = true;
     },
     getTimeFram: (state, action) => {
       state.user.planInfo.timeFrame = action.payload;
     },
-    getPrice:(state, action) => {
+    getPrice: (state, action) => {
       state.user.planInfo.price = action.payload;
     },
     getPlanInfo: (state, action) => {
