@@ -1,6 +1,6 @@
 export type PlanType = {
   title: string;
-  price: string;
+  price: number;
   timeFrame: boolean;
   img:string;
 };

@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { PlanType } from "../../types/planType";
 import Plan from "./plan.module.css";
 import { userActions } from "../../redux/slice/user";
+import { useState } from "react";
 
 type PropType = {
   plan: PlanType;

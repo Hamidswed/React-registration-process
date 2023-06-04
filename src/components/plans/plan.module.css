@@ -1,11 +1,19 @@
 .container{
   display: flex;
+  gap: 1rem;
+  
 }
 .itemContainer{
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid var(--color-gray);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.itemContainer:hover{
+  border: 2px solid var(--color-primary-light);
 }
 .image{
   width: 50%;

@@ -34,6 +34,9 @@ const userSlice = createSlice({
     getTimeFram: (state, action) => {
       state.user.planInfo.timeFrame = action.payload;
     },
+    getPrice:(state, action) => {
+      state.user.planInfo.price = action.payload;
+    },
     getPlanInfo: (state, action) => {
       state.user.planInfo = action.payload;
     },

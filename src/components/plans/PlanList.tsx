@@ -15,24 +15,24 @@ const PlanList = () => {
   const plans: PlanType[] = [
     {
       title: "Platinum",
-      price: "19",
+      price: user.planInfo.timeFrame ? 190 : 19,
       timeFrame: user.planInfo.timeFrame,
       img: plan1,
     },
     {
       title: "Gold",
-      price: "14",
+      price: user.planInfo.timeFrame ? 140 : 14,
       timeFrame: user.planInfo.timeFrame,
       img: plan2,
     },
     {
       title: "Silver",
-      price: "8",
+      price: user.planInfo.timeFrame ? 80 : 8,
       timeFrame: user.planInfo.timeFrame,
       img: plan3,
     },
   ];
-console.log(user,"user");
+
   return (
     <div>
       <div className={Plan.container}>
@@ -40,6 +40,9 @@ console.log(user,"user");
           return <PlanItem key={index + 1} plan={item} />;
         })}
       </div>
+      {user.planInfo.title !== "" ? (
+        <div>{user.planInfo.title} is selected!</div>
+      ) : null}
 
       <form>
         <label>

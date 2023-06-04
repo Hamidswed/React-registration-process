@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   margin: 2rem auto;
-  gap: 5rem;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -19,4 +18,10 @@
 
 .pages{
   flex: 2;
+  padding: 5rem;
+}
+.btnContainer{
+  margin-top: 19rem;
+  display: flex;
+  justify-content: space-between;
 }
