@@ -25,7 +25,7 @@ const PlanItem = ({ plan }: PropType) => {
       </div>
       <h2>{plan.title}</h2>
       <p>
-        {plan.price}/{plan.timeFrame ? "yr" : "mo"}
+        ${plan.price}/{plan.timeFrame ? "yr" : "mo"}
       </p>
     </div>
   );

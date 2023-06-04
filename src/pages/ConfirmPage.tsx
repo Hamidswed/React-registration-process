@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Confirm from "../components/Confirm";
 import { useState } from "react";
+import Submitted from "../components/Submitted";
 
 const ConfirmPage = () => {
   const [confirm, setConfirm] = useState(false);
@@ -8,7 +9,7 @@ const ConfirmPage = () => {
   return (
     <div>
       {confirm ? (
-        <div>Thanks</div>
+        <Submitted />
       ) : (
         <div>
           <h1>Finishing up</h1>

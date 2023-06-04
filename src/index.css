@@ -10,12 +10,10 @@
 
 /* root variable */
 :root{
-  --color-primary:#ff5722;
-  --color-primary-light:#ff7a50;
-  --color-secondary-light:#fff6f2;
-  --color-secondary-dark:#ffa589;
-  --color-navbar:#f8f8f8;
-  --color-heading:#000000;
+  --color-primary:#4E0063;
+  --color-primary-light:#841ba0;
+  --color-secondary:#F90E5D;
+  --color-secondary-light:#ff4784;
   --color-body:#333333;
   --color-white:#ffffff;
 }
@@ -30,7 +28,6 @@ body{
 }
 
 h1,h2,h3{
-  color: var(--color-heading);
   font-weight: 700;
 }
 
